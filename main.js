@@ -4,7 +4,7 @@
 
 window.addEventListener('scroll', () => {
      document.querySelector('nav').classList.toggle('window-scroll',window.scrollY > 85)
-})
+});
 
 
 //display FAQ answers by toggling display
@@ -23,4 +23,4 @@ faqs.forEach(faq => {
               icon.className = "uil uil-plus";
           }
     })
-})
+});
