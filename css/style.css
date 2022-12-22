@@ -196,8 +196,7 @@ header {
 
 .categories {
      background: var(--color-bg1);
-     height: 29rem;
-     
+     height: 33rem;
 }
 
 .categories h1 {
@@ -347,7 +346,7 @@ header {
      display: block;
 }
 
-/* ==========================      Testimonials Section      ========================== */
+/* ==========================      Testimonials Section     ========================== */
 .testimonials__container {
      overflow-x: hidden;
      position: relative;
@@ -392,4 +391,49 @@ header {
      left: 50%;
      top: -1.5rem;
      transform: rotate(45deg);
+}
+
+
+
+
+
+
+/* ==========================      Footer Section      ========================== */
+
+footer {
+     background: var(--color-bg1);
+     padding-top: 3rem;
+     font-size: 0.8rem;
+}
+
+.footer__container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 3rem;
+}
+
+.footer__container > div h4 {
+     margin-bottom: 1rem;
+}
+
+.footer__1 p {
+     margin: 0 0 2rem;
+}
+
+footer ul li a:hover {
+     text-decoration: underline;
+}
+
+.footer__socials {
+     display: flex;
+     gap: 1.7rem;
+     font-size: 2rem;
+     margin-top: 0.8rem;
+}
+
+.footer__copyright {
+     text-align: center;
+     margin-top: 4rem;
+     padding: 1rem 0;
+     border-top: 2px solid var(--color-bg2);
 }
