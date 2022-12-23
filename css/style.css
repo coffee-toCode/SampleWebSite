@@ -293,7 +293,7 @@ header {
      padding: 2rem;
 }
 
-.course__indo p {
+.course__info p {
      margin: 1.2rem 0 2rem;
      font-size: 0.9rem;
 }
@@ -510,11 +510,11 @@ footer ul li a:hover {
 
      @keyframes animateNavItems {
           0% {
-               transform: rotateZ(-90deg) rotatex(90deg) scale(0.1);
+               transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
           }
 
           100% {
-               transform: rotateZ(0) rotatex(0) scale(1);
+               transform: rotateZ(0) rotateX(0) scale(1);
                opacity: 1;
           }
      }
