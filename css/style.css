@@ -79,7 +79,7 @@ a {
 }
 
 img {
-     width: 100%;
+     max-width: 100%;
      display: block;
      object-fit: cover;
 }
@@ -466,7 +466,7 @@ footer ul li a:hover {
           font-size: 1.2rem;
      }
      
-     /* ===========================   NAVBAR (TABLETS)   ========================== */
+/* ===========================   NAVBAR (TABLETS)   ========================== */
 
      nav button {
           display: inline-block;
@@ -494,6 +494,29 @@ footer ul li a:hover {
      .nav_menu li {
           width: 100%;
           height: 5rem;
+          animation: animateNavItems 150ms linear forwards;
+          transform-origin: top right;
+          opacity: 0;
+     }
+     .nav_menu li:nth-child(2) {
+          animation-delay: 150ms;
+     }
+     .nav_menu li:nth-child(3) {
+          animation-delay: 300ms;
+     }
+     .nav_menu li:nth-child(4) {
+          animation-delay: 450ms;
+     }
+
+     @keyframes animateNavItems {
+          0% {
+               transform: rotateZ(-90deg) rotatex(90deg) scale(0.1);
+          }
+
+          100% {
+               transform: rotateZ(0) rotatex(0) scale(1);
+               opacity: 1;
+          }
      }
 
      .nav_menu li a {
@@ -515,5 +538,161 @@ footer ul li a:hover {
 
 
 
+
+
+
+
+/* ===========================   HEADER (TABLETS)   ========================== */
+header {
+     height: 59vh;
+     margin-bottom: 4rem;
+}
+
+.header__container {
+     gap: 0;
+     padding-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===========================   CATEGORIES (TABLETS)   ========================== */
+
+     .categories {
+          height: auto;
+     }
+
+     .categories__container {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+     }
+
+     .categories__left {
+          margin-right: 0;
+     }
+
+
+
+
+
+
+/* ===========================   PROJECT CARDS (TABLETS)   ========================== */
+     .course {
+          margin-top: 0;
+     }
+
+     .courses__container {
+          grid-template-columns: 1fr 1fr;
+     }
+     .course__image img {
+          width: 100%;
+          justify-self: center
+     }
+
+
+
+
+
+/* ===========================   FAQs (TABLETS)   ========================== */
+.faqs__container {
+     grid-template-columns: 1fr;
+}
+
+.faq {
+     padding: 1rem;
+}
+
+
+
+
+
+
+/* ===========================   FOOTER (TABLETS)   ========================== */
+.footer__container {
+     grid-template-columns: 1fr 1fr;
+}
+}
+
+
+
+
+
+
+
+
+/* ===========================   MEDIA QUERIES (PHONES)   ========================== */
+@media screen and (max-width: 600px){
+     
+     .container {
+          width: var(--container-width-sm);
+     }
+
+/* ===========================   NAV MENU (PHONES)   ========================== */
+     .nav_menu {
+          right:3%;
+     }
+
+/* ===========================   HEADER (PHONES)   ========================== */
+
+     header {
+          height: 100vh;
+     }
+
+     .header__container {
+          grid-template-columns: 1fr;
+          text-align: center;
+     }
+
+     .header__left p {
+          margin-bottom: 1.5rem;
+     }
+
+/* ===========================   CATEGORIES (PHONES)   ========================== */
+
+     .categories__right {
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+     }
+
+     .category {
+          padding: 1rem;
+          border-radius: 1rem;
+     }
+     
+/* ===========================   PROJECT CARDS (PHONES)   ========================== */
+     .courses__container {
+          grid-template-columns: 1fr;
+     }
+
+     .course__image img {
+          width: 100%;
+          justify-self: center
+     }
+
+/* ===========================   TESTIMONIALS (PHONES)   ========================== */
+    .testimonial__body {
+     padding: 1rem;
+    }
+
+/* ===========================   FOOTER (PHONES)   ========================== */
+    .footer__container{
+     grid-template-columns: 1fr;
+     text-align: center;
+     gap: 1rem;
+    }
+
+    .footer__1 p {
+     margin: 1rem auto;
+    }
+
+    .footer__socials {
+     justify-content: center;
+    }
 
 }
