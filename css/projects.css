@@ -1,0 +1,68 @@
+/* ==========================      Popular projects Section      ========================== */
+
+.projects {
+     margin-top: 1rem;
+}
+
+.projects__container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 2rem;
+}
+
+.project {
+     background: var(--color-bg1);
+     text-align: center;
+     border: 1px solid transparent;
+     transition: var(--transition);
+}
+
+.project:hover {
+     background: transparent;
+     border-color: var(--color-primary);
+}
+
+.project__info {
+     padding: 2rem;
+}
+
+.project__info p {
+     margin: 1.2rem 0 2rem;
+     font-size: 0.9rem;
+}
+
+
+
+
+
+/* ===========================   PROJECT CARDS (TABLETS)   ========================== */
+@media screen and (max-width: 1024px) {
+     
+     .project {
+          margin-top: 0;
+     }
+
+     .projects__container {
+          grid-template-columns: 1fr 1fr;
+     }
+     .project__image img {
+          width: 100%;
+          justify-self: center
+     }
+}
+
+
+
+
+/* ===========================   PROJECT CARDS (PHONES)   ========================== */
+@media screen and (max-width: 600px) {
+
+     .projects__container {
+          grid-template-columns: 1fr;
+     }
+
+     .project__image img {
+          width: 100%;
+          justify-self: center
+     }
+}
