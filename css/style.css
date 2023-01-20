@@ -32,7 +32,7 @@
 body {
      font-family: 'Montserrat', sans-serif;
      line-height: 1.7;
-     color: var(--color-white);
+     color: var(--color-black);
      background: var(--color-bg);
      background-image: url("../Images/blue-569222.jpg");
      background-attachment: fixed;
@@ -192,98 +192,98 @@ header {
 
 
 
-/* ==========================      Categories Section      ========================== */
+/* ==========================      Small Project Tiles Section      ========================== */
 
 
 
-.categories {
+.projects {
      box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
      height: 33rem;
      color: #000;
 }
 
-.categories h1 {
+.projects h1 {
      line-height: 1;
      margin-bottom: 3rem;
 }
 
-.categories__container {
+.project__container {
      display: grid;
      grid-template-columns: 40% 60%;
      /* gap: 4rem; */
 }
 
-.categories__left {
+.projects__left {
      margin-right: 4rem;
 }
-.categories__left p {
+.projects__left p {
      margin: 1rem 0 3rem;
 }
 
-.categories__right {
+.projects__right {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 1.2rem;
 }
 
-.category {
+.project {
      background: var(--color-primary);
      padding: 2rem;
      border-radius: 2rem;
      transition: var(--transition);
+     color: var(--color-white);
 }
 
-.category:hover {
+.project:hover {
      box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
      z-index: 1;
 }
 
-.category:nth-child(2) .category_icon {
+.project:nth-child(2) .project_icon {
      background: var(--color-danger);
 }
 
-.category:nth-child(3) .category_icon {
+.project:nth-child(3) .project_icon {
      background: var(--color-success);
 }
 
-.category:nth-child(4) .category_icon {
+.project:nth-child(4) .project_icon {
      background: var(--color-warning);
 }
 
-.category:nth-child(5) .category_icon {
+.project:nth-child(5) .project_icon {
      background: var(--color-success);
 }
 
-.category_icon {
+.project_icon {
      background: var(--color-primary);
      padding: 0.7rem;
      border-radius: 0.9rem;
 }
-.category h5 {
+.project h5 {
      margin: 2rem 0 1rem;
 }
 
-.category p {
+.project p {
      font-size: 0.85rem;
 }
 
 
-/* ==========================      PROJECT CARDS      ========================== */
+/* ==========================      Course CARDS      ========================== */
 
 .courses {
      box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-
-     margin-top: 10rem;
 }
 
 .courses__container {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 2rem;
+     color: var(--color-white);
 }
 
 .course {
-     background: var(--color-bg1);
+     background: var(--color-primary);
      text-align: center;
      border: 1px solid transparent;
      transition: var(--transition);
@@ -291,7 +291,9 @@ header {
 
 .course:hover {
      background: transparent;
-     border-color: var(--color-primary);
+     border-color: var(--color-primary);     
+     color: var(--color-black);
+
 }
 
 .course__info {
@@ -319,6 +321,7 @@ header {
      display: grid;
      grid-template-columns: 1fr 1fr;
      gap: 1rem;
+     color: var(--color-white);
 }
 
 .faq {
@@ -368,6 +371,7 @@ header {
      overflow: hidden;
      margin: 0 auto 1rem;
      border: 1rem solid var(--color-bg1);
+     left: 70%;
 }
 
 .testimonial__info {
@@ -379,6 +383,7 @@ header {
      padding: 2rem;
      margin-top: 3rem;
      position: relative;
+     color: var(--color-white);
 }
 
 .testimonial__body::before {
@@ -392,7 +397,7 @@ header {
      width: 3rem;
      height: 3rem;
      position: absolute;
-     left: 50%;
+     left: 45%;
      top: -1.5rem;
      transform: rotate(45deg);
 }
@@ -408,6 +413,7 @@ footer {
      background: var(--color-primary);
      padding-top: 3rem;
      font-size: 0.8rem;
+     color: var(--color-white);
 }
 
 .footer__container {
@@ -514,11 +520,12 @@ footer ul li a:hover {
 
      @keyframes animateNavItems {
           0% {
-               transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+               /* transform: rotateZ(-90deg) rotateX(90deg) scale(0.1); */
+               transform: translateY();
           }
 
           100% {
-               transform: rotateZ(0) rotateX(0) scale(1);
+               /* transform: rotateZ(0) rotateX(0) scale(1); */
                opacity: 1;
           }
      }
